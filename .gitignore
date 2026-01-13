@@ -205,3 +205,34 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ── PyTorch / Deep Learning / ML 专属大文件 ────────────────
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx               # 有时会导出 ONNX 模型
+*.bin                # 有些 HuggingFace 模型用 .bin
+
+# 数据集、模型保存目录（根据你的项目命名调整）
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+models/
+checkpoints/
+weights/
+output/
+outputs/
+logs/
+experiments/
+runs/                # TensorBoard
+wandb/               # Weights & Biases 本地缓存
+lightning_logs/      # PyTorch Lightning 默认日志
+
+# 压缩包（数据集下载的 zip/tar 常犯的错）
+*.zip
+*.tar
+*.tar.gz
+*.7z
